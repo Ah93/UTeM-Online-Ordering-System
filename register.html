@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<header>
+<nav class="navbar navbar-reverse" style="margin-bottom:0;" >
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="http://io.its.ac.id/wp-content/uploads/2014/05/jawatan-kosong-di-universiti-teknikal-malaysia-melaka-utem.jpg" width="100" height="40"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><button class="btn btn-info navbar-btn btn-block"  onclick="window.location.href='loginPage.html'">Sign In</button></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+  </header>
+  
+<div class="container">
+<form class="form-horizontal" id="form_members" role="form" method="post" action="update.php">
+ <h1 class="page-header">Create Account</h1>
+<div class="form-group">
+<label for="Staffid" class="col-sm-1">ID</label>
+    <div class="col-sm-4">
+	<input type="text" class="form-control" name="id" value="">
+    </div>
+	</div>
+	<div class="form-group">
+    <label for="Name" class="col-sm-1">Name</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" name="Name" value="">
+    </div>
+	</div>
+	<div class="form-group">
+     <label for="email" class="col-sm-1">Email</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" name="email" value="">
+    </div>
+	</div>
+	<div class="form-group">
+	<label for="address" class="col-sm-1">Address</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" name="address" value="">
+    </div>
+	</div>
+	<div class="form-group">
+	<label for="postcode" class="col-sm-1">Postcode</label>
+    <div class="col-sm-4">
+        <input type="text" class="form-control" name="postcode" value="">
+    </div>
+	</div>
+	<div class="form-group">
+	<label for="password" class="col-sm-1">Password</label>
+    <div class="col-sm-4">
+        <input type="password" class="form-control" name="password" value="">
+    </div>
+    </div>
+	<div class="form-group">
+	<label for="password" class="col-sm-1">Confirm Password</label>
+    <div class="col-sm-4">
+        <input type="password" class="form-control" name="password" value="">
+    </div>
+    </div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-info btn-lg pull-right" name="save" id="submit">Register</button>
+    </div>
+    </div>
+</form>
+</html>
